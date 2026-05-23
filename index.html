@@ -1012,6 +1012,52 @@ footer p { font-size:12px; color:var(--white20); }
     </div>
   </div>
 </section>
+   <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  // Initialize EmailJS
+  emailjs.init("YOUR_PUBLIC_KEY");
+
+  // Handle form submission
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      const submitBtn = document.getElementById("submitBtn");
+      submitBtn.innerHTML = "Sending...";
+
+      emailjs.sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        this
+      )
+      .then(function() {
+
+        submitBtn.innerHTML = "Message Sent ✓";
+
+        alert("Your message has been sent successfully!");
+
+        document.getElementById("contact-form").reset();
+
+        setTimeout(() => {
+          submitBtn.innerHTML = "Send Message →";
+        }, 3000);
+
+      }, function(error) {
+
+        submitBtn.innerHTML = "Send Message →";
+
+        alert("Failed to send message.");
+
+        console.log(error);
+
+      });
+
+    });
+</script>
 
 <!-- ════ FOOTER ════ -->
 <footer>
