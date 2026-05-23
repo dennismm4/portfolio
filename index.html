@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dennis Muraguri — Web Developer & Digital Systems</title>
+<title>Dennis Muraguri — Digital Systems & Web Developer </title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ═══════════════════════════
    ROOT & RESET
@@ -44,12 +44,16 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   background: var(--bg-deep);
   color: var(--white);
   overflow-x: hidden;
   cursor: none;
   min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ═══════════════════════════
@@ -177,7 +181,7 @@ nav {
   to { transform: translateX(-50%) translateY(0); }
 }
 .nav-logo {
-  font-family:'Syne',sans-serif; font-weight:800; font-size:1.1rem;
+  font-family:'Playfair Display',serif; font-weight:800; font-size:1.1rem;
   letter-spacing:-.02em; color:var(--white); text-decoration:none;
   position:relative; z-index:3;
 }
@@ -192,7 +196,7 @@ nav {
 .nav-pill {
   background:rgba(255,107,53,0.85); color:#fff;
   padding:9px 20px; border-radius:50px;
-  font-family:'Syne',sans-serif; font-size:12px; font-weight:700;
+  font-family:'Playfair Display',serif; font-size:12px; font-weight:700;
   letter-spacing:.08em; text-transform:uppercase; text-decoration:none;
   transition:background .2s, transform .2s, box-shadow .2s;
   position:relative; z-index:3;
@@ -231,9 +235,9 @@ nav {
 }
 
 .hero-title {
-  font-family:'Syne',sans-serif;
+  font-family:'Playfair Display',serif;
   font-size:clamp(3rem,8.5vw,7rem);
-  font-weight:800; line-height:.95; letter-spacing:-.03em;
+  font-weight:800; line-height:.95; letter-spacing:-.01em;
   margin-bottom:2rem; max-width:920px;
 }
 .hero-title .line { display:block; overflow:hidden; }
@@ -265,8 +269,8 @@ nav {
 }
 
 .hero-sub {
-  font-size:16px; color:var(--white50); line-height:1.75;
-  max-width:500px; margin-bottom:3rem;
+  font-size:17px; color:var(--white50); line-height:1.8;
+  max-width:500px; margin-bottom:3rem; font-weight:300;
   opacity:0; animation:fadeUp .7s 1.15s cubic-bezier(.16,1,.3,1) forwards;
 }
 
@@ -279,7 +283,7 @@ nav {
 .btn-glass {
   position:relative; overflow:hidden;
   padding:14px 32px; border-radius:50px;
-  font-family:'Syne',sans-serif; font-size:13px; font-weight:700;
+  font-family:'Playfair Display',serif; font-size:13px; font-weight:700;
   letter-spacing:.06em; text-transform:uppercase;
   cursor:none; text-decoration:none; color:var(--white);
   display:inline-flex; align-items:center; gap:8px;
@@ -320,7 +324,7 @@ nav {
 }
 .hero-stat { flex:1; padding-right:2.5rem; }
 .hero-stat-n {
-  font-family:'Syne',sans-serif; font-size:2.4rem; font-weight:800;
+  font-family:'Playfair Display',serif; font-size:2.4rem; font-weight:800;
   background:linear-gradient(135deg,#fff,rgba(255,255,255,0.6));
   -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
   display:block; line-height:1;
@@ -366,7 +370,7 @@ nav {
   animation:marqueeRun 28s linear infinite;
 }
 .marquee-track span {
-  font-family:'Syne',sans-serif; font-size:.85rem; font-weight:700;
+  font-family:'Playfair Display',serif; font-size:.85rem; font-weight:700;
   letter-spacing:.15em; text-transform:uppercase;
   padding:.2rem 2rem; color:var(--white50);
 }
@@ -388,9 +392,9 @@ section { padding:8rem 3rem; position:relative; z-index:2; }
   content:''; width:20px; height:1.5px; background:var(--orange); display:block;
 }
 .section-title {
-  font-family:'Syne',sans-serif;
+  font-family:'Playfair Display',serif;
   font-size:clamp(2rem,4.5vw,3.6rem);
-  font-weight:800; line-height:1.05; letter-spacing:-.03em;
+  font-weight:800; line-height:1.1; letter-spacing:-.01em;
 }
 
 /* ═══════════════════════════
@@ -402,7 +406,7 @@ section { padding:8rem 3rem; position:relative; z-index:2; }
   max-width:1160px; margin:0 auto;
 }
 .about-text p {
-  font-size:15px; color:var(--white50); line-height:1.8; margin-top:1.5rem;
+  font-size:16px; color:var(--white50); line-height:1.85; margin-top:1.5rem;
 }
 .about-text strong { color:var(--white80); font-weight:500; }
 
@@ -441,11 +445,11 @@ section { padding:8rem 3rem; position:relative; z-index:2; }
   position:relative; z-index:1;
 }
 .g-card h3 {
-  font-family:'Syne',sans-serif; font-size:.95rem; font-weight:700;
+  font-family:'Playfair Display',serif; font-size:.95rem; font-weight:700;
   margin-bottom:5px; position:relative; z-index:1;
 }
 .g-card p {
-  font-size:12px; color:var(--white50); line-height:1.6;
+  font-size:13px; color:var(--white50); line-height:1.7;
   margin:0; position:relative; z-index:1;
 }
 
@@ -488,12 +492,12 @@ section { padding:8rem 3rem; position:relative; z-index:2; }
 }
 .svc-glass:hover::after { opacity:1; }
 .svc-num {
-  font-family:'Syne',sans-serif; font-size:10px; font-weight:700;
+  font-family:'Playfair Display',serif; font-size:10px; font-weight:700;
   color:rgba(255,107,53,0.7); letter-spacing:.15em;
   margin-bottom:1.4rem; display:block; position:relative; z-index:1;
 }
 .svc-name {
-  font-family:'Syne',sans-serif; font-size:.95rem; font-weight:700; line-height:1.3;
+  font-family:'Playfair Display',serif; font-size:.95rem; font-weight:700; line-height:1.3;
   position:relative; z-index:1;
 }
 
@@ -509,6 +513,9 @@ section { padding:8rem 3rem; position:relative; z-index:2; }
   display:grid; grid-template-columns:repeat(3,1fr);
   gap:20px; max-width:1160px; margin:0 auto;
 }
+
+a.proj-glass { cursor: none; }
+a.proj-glass:focus { outline: 2px solid rgba(255,107,53,0.6); outline-offset: 3px; }
 
 .proj-glass {
   border-radius:var(--radius-lg);
@@ -567,10 +574,10 @@ section { padding:8rem 3rem; position:relative; z-index:2; }
 
 .proj-body { padding:1.4rem; position:relative; z-index:2; }
 .proj-title {
-  font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:700;
+  font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700;
   margin-bottom:8px; line-height:1.2;
 }
-.proj-desc { font-size:12.5px; color:var(--white50); line-height:1.65; margin-bottom:1.2rem; }
+.proj-desc { font-size:14px; color:var(--white50); line-height:1.7; margin-bottom:1.2rem; }
 .tech-row { display:flex; gap:6px; flex-wrap:wrap; }
 .tech-pill {
   font-size:10px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
@@ -658,7 +665,7 @@ section { padding:8rem 3rem; position:relative; z-index:2; }
   pointer-events:none;
 }
 .form-glass h3 {
-  font-family:'Syne',sans-serif; font-size:1.25rem; font-weight:700;
+  font-family:'Playfair Display',serif; font-size:1.25rem; font-weight:700;
   margin-bottom:1.8rem; position:relative; z-index:1;
 }
 .form-group { margin-bottom:1.2rem; position:relative; z-index:1; }
@@ -672,7 +679,7 @@ section { padding:8rem 3rem; position:relative; z-index:2; }
   background:rgba(255,255,255,0.05);
   border:1px solid rgba(255,255,255,0.12);
   border-radius:var(--radius-sm); padding:13px 16px;
-  font-family:'DM Sans',sans-serif; font-size:14px; color:var(--white);
+  font-family:'Inter',sans-serif; font-size:14px; color:var(--white);
   outline:none; resize:vertical;
   backdrop-filter:blur(10px);
   transition:border-color .2s, background .2s, box-shadow .2s;
@@ -691,7 +698,7 @@ section { padding:8rem 3rem; position:relative; z-index:2; }
 .btn-submit {
   width:100%; border:none; cursor:none;
   padding:14px; border-radius:50px; margin-top:.5rem;
-  font-family:'Syne',sans-serif; font-size:14px; font-weight:700;
+  font-family:'Playfair Display',serif; font-size:14px; font-weight:700;
   letter-spacing:.08em; text-transform:uppercase;
   color:#fff; position:relative; overflow:hidden; z-index:1;
   background:linear-gradient(135deg,rgba(255,107,53,0.85),rgba(255,60,20,0.7));
@@ -719,7 +726,7 @@ footer {
   background:rgba(255,255,255,0.02);
   backdrop-filter:blur(10px);
 }
-.footer-logo { font-family:'Syne',sans-serif; font-weight:800; font-size:1rem; color:var(--white); }
+.footer-logo { font-family:'Playfair Display',serif; font-weight:800; font-size:1rem; color:var(--white); }
 .footer-logo em { color:var(--orange); font-style:normal; }
 footer p { font-size:12px; color:var(--white20); }
 
@@ -771,7 +778,7 @@ footer p { font-size:12px; color:var(--white20); }
 
 <!-- ════ NAV ════ -->
 <nav class="glass">
-  <a href="#" class="nav-logo">Dennis_Muraguri<em>.</em></a>
+  <a href="#" class="nav-logo">Dennis<em>.</em></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -785,7 +792,7 @@ footer p { font-size:12px; color:var(--white20); }
 <section class="hero">
   <div class="hero-tag glass">
     <span class="hero-tag-dot"></span>
-    Digital Systems · Web Developer  · Nairobi, KE
+    Web Developer · Digital Systems · Nairobi, KE
   </div>
 
   <h1 class="hero-title">
@@ -809,8 +816,8 @@ footer p { font-size:12px; color:var(--white20); }
 
   <div class="hero-stats">
     <div class="hero-stat">
-      <span class="hero-stat-n">20<em>+</em></span>
-      <span class="hero-stat-l">Projects </span>
+      <span class="hero-stat-n">100<em>+</em></span>
+      <span class="hero-stat-l">Quick turn around time</span>
     </div>
     <div class="hero-stat">
       <span class="hero-stat-n">10<em>+</em></span>
@@ -832,7 +839,7 @@ footer p { font-size:12px; color:var(--white20); }
 <div class="marquee-wrap">
   <div class="marquee-track">
     <span>Website Design</span><span class="dot">✦</span>
-    <span>AI optimized</span><span class="dot">✦</span>
+    <span>AI Optimization</span><span class="dot">✦</span>
     <span>Digital Infrastructure</span><span class="dot">✦</span>
     <span>SEO Optimization</span><span class="dot">✦</span>
     <span>CMS Optimization</span><span class="dot">✦</span>
@@ -856,7 +863,7 @@ footer p { font-size:12px; color:var(--white20); }
     <div class="about-text reveal">
       <p class="section-kicker">About Me</p>
       <h2 class="section-title">Clean code.<br>Real results.</h2>
-      <p>I'm <strong>Dennis Muraguri</strong>, a Nairobi-based web developer and digital systems specialist. I build fast, accessible, and manageable digital experiences — combining design, technology, and operational thinking.</p>
+      <p>I'm <strong>Dennis Muraguri</strong>, a Nairobi-based digital systems specialist and web developer . I build fast, accessible, and manageable digital experiences — combining design, technology, and operational thinking.</p>
       <p>My work spans modern websites, CMS platforms, library systems, and educational tech. Every project gets treated like it matters — because it does.</p>
     </div>
     <div class="about-cards reveal d2">
@@ -892,7 +899,7 @@ footer p { font-size:12px; color:var(--white20); }
   </div>
   <div class="services-grid reveal d1">
     <div class="svc-glass"><span class="svc-num">01</span><p class="svc-name">Website Design</p></div>
-    <div class="svc-glass"><span class="svc-num">02</span><p class="svc-name">WordPress Development</p></div>
+    <div class="svc-glass"><span class="svc-num">02</span><p class="svc-name">AI Optimization</p></div>
     <div class="svc-glass"><span class="svc-num">03</span><p class="svc-name">CMS Optimization</p></div>
     <div class="svc-glass"><span class="svc-num">04</span><p class="svc-name">Performance Optimization</p></div>
     <div class="svc-glass"><span class="svc-num">05</span><p class="svc-name">Hosting &amp; Deployment</p></div>
@@ -933,7 +940,7 @@ footer p { font-size:12px; color:var(--white20); }
       </div>
       <div class="proj-body">
         <h3 class="proj-title">Book Bunk Digital Infrastructure</h3>
-        <p class="proj-desc">Managed digital infrastructure, CMS systems, website workflows, and full technical support operations.</p>
+        <p class="proj-desc">Managed digital infrastructure for 7 years, CMS systems, website workflows, and full technical support operations.</p>
         <div class="tech-row">
           <span class="tech-pill">WordPress</span><span class="tech-pill">Hosting</span><span class="tech-pill">CMS</span>
         </div>
@@ -967,13 +974,13 @@ footer p { font-size:12px; color:var(--white20); }
         <a href="mailto:dennismuraguri4@gmail.com" class="contact-link">
           <div class="c-icon">✉</div><span>dennismuraguri4@gmail.com</span><span class="c-arrow">→</span>
         </a>
-        <a href="https://github.com/dennismm4" class="contact-link" target="_blank" rel="noopener">
+        <a href="https://dennismm4.github.io/portfolio/" class="contact-link" target="_blank" rel="noopener">
           <div class="c-icon">⌨</div><span>GitHub</span><span class="c-arrow">→</span>
         </a>
         <a href="https://www.linkedin.com/in/dennismainaitspecialist/" class="contact-link" target="_blank" rel="noopener">
           <div class="c-icon">💼</div><span>LinkedIn</span><span class="c-arrow">→</span>
         </a>
-        <a href="https://wa.me/254799934445" class="contact-link" target="_blank" rel="noopener">
+        <a href="https://wa.me/254700000000" class="contact-link" target="_blank" rel="noopener">
           <div class="c-icon">📲</div><span>WhatsApp</span><span class="c-arrow">→</span>
         </a>
       </div>
@@ -987,7 +994,7 @@ footer p { font-size:12px; color:var(--white20); }
         </div>
         <div class="form-group">
           <label>Email</label>
-          <input type="email" placeholder="dennismuraguri4@gmail.com" required>
+          <input type="email" placeholder="your@email.com" required>
         </div>
         <div class="form-group">
           <label>Project Type</label>
@@ -1005,8 +1012,8 @@ footer p { font-size:12px; color:var(--white20); }
 
 <!-- ════ FOOTER ════ -->
 <footer>
-  <div class="footer-logo">Dennis_Muraguri<em>.</em></div>
-  <p>© 2025 Dennis Maina. Built with intention. Based in Nairobi.</p>
+  <div class="footer-logo">Dennis<em>.</em></div>
+  <p>© 2025 Dennis Muraguri. Built with intention. Based in Nairobi.</p>
   <p style="font-size:11px;color:rgba(255,255,255,0.1);">Web Developer · Digital Systems Specialist</p>
 </footer>
 
